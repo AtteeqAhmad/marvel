@@ -7,7 +7,7 @@ function drawApiHeros() {
    let template = ''
    let heros = _marvelService.drawApiHeros
    heros.forEach(h => {
-      let button = `<button class ="btn btn-primary" onclick="app.controllers.marvelController.addToTeam('${h.id}`)">ADD TO TEAM</button>`
+      let button = `<button class ="btn btn-primary" onclick="app.controllers.marvelController.addToTeam('${h.id}')">ADD TO TEAM</button>`
    template += h.getCard(button)
 })
 document.querySelector('.myteam').innerHTML = template
